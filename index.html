@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sets the character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Helps the webpage display correctly on different screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Sets the title shown in the browser tab -->
+  <title>Speedy Lunch Getters</title>
+
+  <!-- Connects the CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Connects the JavaScript file -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- APP HEADER -->
+  <header class="app-header">
+    <div class="header-container">
+      <h1 class="app-logo">Speedy Lunch Getters</h1>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">Who We Are</a>
+        <a href="#menu">What We Offer</a>
+        <a href="#reviews">What They Say</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>
+<!-- HERO BANNER SECTION -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <!-- Main welcome headline -->
+    <h2>Lunch Made Easy for Holland Tech Teachers</h2>
+    
+    <!-- Short explanation of what the app does -->
+    <p>Order your lunch ahead of time, check estimated wait times, or grab items ready for immediate pickup.</p>
+    
+    <!-- Button that jumps down to the menu section -->
+    <a href="#menu" class="hero-btn">Browse Lunch Menus</a>
+  </div>
+</section>
+<!-- WHAT WE OFFER / RESTAURANT SLIDER SECTION -->
+<section id="menu" class="menu-section">
+  <div class="menu-container">
+    <h2>What We Offer — Lunch Menus</h2>
+    <p class="menu-subtitle">Use the arrows to switch between School Lunch and local restaurants.</p>
+
+    <!-- Restaurant Slider Controls -->
+    <div class="slider-controls">
+      <!-- Left Arrow Button -->
+      <button id="prevBtn" class="arrow-btn" aria-label="Previous Restaurant">&#8592;</button>
+
+      <!-- Displays the current restaurant name and category -->
+      <div class="restaurant-header">
+        <span id="restaurantType" class="badge">On Campus</span>
+        <h3 id="restaurantName">School Lunch</h3>
+      </div>
+
+      <!-- Right Arrow Button -->
+      <button id="nextBtn" class="arrow-btn" aria-label="Next Restaurant">&#8594;</button>
+    </div>
+
+    <!-- Container where JavaScript will display the menu items -->
+    <div id="menuItemsList" class="menu-items-grid">
+      <!-- Items load here automatically -->
+    </div>
+  </div>
+</section>
+<!-- SELECTED ORDER SUMMARY SECTION -->
+    <div class="order-box">
+      <h3>Your Lunch Order</h3>
+
+      <!-- List where selected items will appear -->
+      <ul id="orderList" class="order-list">
+        <li>No items selected yet.</li>
+      </ul>
+
+      <!-- Button to clear the current order -->
+      <button id="clearOrderBtn" class="clear-btn">Clear Order</button>
+    </div>
+    <!-- WAIT TIME / IMMEDIATE PICKUP DISPLAY BOX -->
+      <div id="waitSummary" class="wait-summary-box">
+        Select items to see your estimated wait time.
+      </div>
+      <!-- WHO WE ARE SECTION -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <h2>Who We Are</h2>
+    <p>
+      We are a student-designed lunch ordering service created specifically for the teachers and staff at Holland Tech. 
+      Because lunch periods are short, our goal is to let you see what is ready for immediate pickup or pre-order from local favorites so your food is ready before you arrive.
+    </p>
+  </div>
+</section>
+<!-- WHAT THEY SAY (TEACHER REVIEWS) SECTION -->
+<section id="reviews" class="reviews-section">
+  <div class="reviews-container">
+    <h2>What They Say</h2>
+    <p class="reviews-subtitle">Feedback from Holland Tech teachers and staff.</p>
+
+    <div class="reviews-grid">
+      <!-- Review Card 1 -->
+      <div class="review-card">
+        <p>"Being able to check which lunch items are ready for immediate pickup saves me at least 10 minutes on busy days!"</p>
+        <h4>— Ms. Rodriguez, English Department</h4>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="review-card">
+        <p>"I love being able to switch between School Lunch and local spots like Suns Pizza and Love Health Cafe in one place."</p>
+        <h4>— Mr. Carter, Math Department</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p class="contact-subtitle">Have questions about your lunch order? Reach out to Speedy Lunch Getters!</p>
+
+    <div class="contact-details">
+      <!-- Phone Number -->
+      <p><strong>Phone:</strong> <a href="tel:8578007965">(857) 800-7965</a></p>
+
+      <!-- Email Address -->
+      <p><strong>Email:</strong> <a href="mailto:showtimerey35@gmail.com">showtimerey35@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+<!-- Displays the current restaurant logo or School Lunch photo -->
+      <img id="restaurantLogo" class="restaurant-logo" src="images/school-lunch.jpg" alt="School Lunch">
